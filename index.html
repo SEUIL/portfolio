@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SEUIL의 풀스택 개발 포트폴리오. FitMate, Threadia, Together, TimeTodo 등 여섯 프로젝트의 구현과 검증 기록.">
+  <meta name="theme-color" content="#102432">
+  <title>SEUIL · 개발 포트폴리오</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#projects">프로젝트 바로가기</a>
+  <header class="site-header shell">
+    <a class="brand" href="#top">SEUIL<span>.</span></a>
+    <nav aria-label="주요 메뉴">
+      <a href="#projects">프로젝트</a>
+      <a href="https://github.com/SEUIL">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <h1 id="intro-title">Full-Stack<br>Developer<span>.</span></h1>
+        <p>Java·Kotlin과 Spring Boot로 백엔드를 개발하고, 웹과 Android 화면에 연결합니다. 프로젝트마다 어떤 문제를 풀었고 어떻게 확인했는지 정리했습니다.</p>
+        <a class="button primary" href="#projects">프로젝트 보기 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="window">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <img src="./assets/timetodo-dashboard.png" alt="">
+        </div>
+        <div class="device"><img src="./assets/fitmate-workout.png" alt=""></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">프로젝트</h2>
+      </div>
+      <div class="project-grid">
+        <article class="card">
+          <a href="#fitmate" class="media media-fitmate" tabindex="-1" aria-hidden="true">
+            <img src="./assets/fitmate-routine.png" alt="" loading="lazy">
+            <img src="./assets/fitmate-workout.png" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <h3>FitMate</h3>
+            <p>직접 기록한 운동과 Galaxy Fit3 데이터를 한 리포트에서 확인하는 Android 앱.</p>
+            <ul class="tech" aria-label="기술 스택"><li>Kotlin</li><li>Jetpack Compose</li><li>Spring Boot</li></ul>
+            <div class="links"><a class="detail-link" href="#fitmate">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/fitmate" aria-label="FitMate GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="card">
+          <a href="#threadia" class="media media-threadia" tabindex="-1" aria-hidden="true">
+            <div class="workflow">
+              <span>이슈</span><b>→</b><span>쓰레드</span><b>→</b><span>문서</span>
+              <div><i></i><i></i><i></i></div>
+              <small>프로젝트 안에서 이어지는 업무 흐름</small>
+            </div>
+          </a>
+          <div class="card-body">
+            <h3>Threadia</h3>
+            <p>이슈, 채팅, 쓰레드, 문서와 그래프를 하나의 작업 흐름으로 묶은 협업 플랫폼.</p>
+            <ul class="tech" aria-label="기술 스택"><li>Next.js</li><li>Spring Boot</li><li>MySQL</li></ul>
+            <div class="links"><a class="detail-link" href="#threadia">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/Threadia" aria-label="Threadia GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="card">
+          <a href="#together" class="media media-web" tabindex="-1" aria-hidden="true"><img src="./assets/together-design.png" alt="" loading="lazy"></a>
+          <div class="card-body">
+            <h3>Together</h3>
+            <p>졸업작품 팀이 회의, 설계, 교수 피드백과 보고서를 한곳에서 관리하는 서비스.</p>
+            <ul class="tech" aria-label="기술 스택"><li>Vue 3</li><li>Spring Boot</li><li>MySQL · Redis</li></ul>
+            <div class="links"><a class="detail-link" href="#together">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/Together" aria-label="Together GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="card">
+          <a href="#timetodo" class="media media-web media-timetodo" tabindex="-1" aria-hidden="true"><img src="./assets/timetodo-dashboard.png" alt="" loading="lazy"></a>
+          <div class="card-body">
+            <h3>TimeTodo</h3>
+            <p>일정과 할 일을 관리하던 기존 코드의 인증, 데이터 구조와 테스트를 개선한 프로젝트.</p>
+            <ul class="tech" aria-label="기술 스택"><li>React</li><li>Spring Security</li><li>Flyway</li></ul>
+            <div class="links"><a class="detail-link" href="#timetodo">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/Timetodo" aria-label="TimeTodo GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-projects">
+        <article class="compact-card">
+          <h3>Subscription-TTAIT</h3>
+          <p>공공주택 청약 공고를 모아 조회하고 관심 공고를 관리하는 프로젝트.</p>
+          <div class="links"><a class="detail-link" href="#ttait">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/Subscription-TTAIT" aria-label="Subscription-TTAIT GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="compact-card">
+          <h3>StudyLog</h3>
+          <p>학습 내용을 Markdown 글, 태그와 시리즈로 정리하고 공유하는 블로그.</p>
+          <div class="links"><a class="detail-link" href="#studylog">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/acorncampus_studyLog" aria-label="StudyLog GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-studies" aria-labelledby="cases-title">
+      <div class="section-heading"><h2 id="cases-title">구현과 검증</h2></div>
+
+      <article class="case" id="fitmate" aria-labelledby="fitmate-title">
+        <header><h3 id="fitmate-title">FitMate</h3><p>웨어러블 데이터를 운동 세션에 연결</p></header>
+        <dl>
+          <div><dt>역할</dt><dd>앱에 운동 기록 API를 연결하고, 운동 이력을 기간별로 비교하는 AI 리포트를 확장했습니다.</dd></div>
+          <div><dt>문제</dt><dd>앱에 기록한 세트와 웨어러블로 측정한 지표는 저장 위치와 기록 시각이 달랐습니다.</dd></div>
+          <div><dt>구현</dt><dd>Samsung Health에서 가져온 운동의 시간 범위를 비교하고, 사용자가 선택한 기록을 FitMate 세션에 연결했습니다. 메이트 수락 API는 서버에서 정원을 확인합니다.</dd></div>
+          <div><dt>검증</dt><dd>Galaxy Fit3 실기기 연동을 시연했고, 마지막 모집 자리 동시 수락과 채팅 재전송은 백엔드 통합 테스트로 다뤘습니다.</dd></div>
+        </dl>
+        <a class="evidence" href="https://github.com/SEUIL/fitmate#구현에서-다룬-문제">구현 설명 보기 <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="case" id="threadia" aria-labelledby="threadia-title">
+        <header><h3 id="threadia-title">Threadia</h3><p>협업 맥락과 플랫폼 운영 기능</p></header>
+        <dl>
+          <div><dt>역할</dt><dd>팀장으로 일정과 작업을 관리하고, 감사 로그 및 회사 생명주기를 다루는 플랫폼 관리자 백엔드를 맡았습니다.</dd></div>
+          <div><dt>구현</dt><dd>팀은 이슈·쓰레드·문서를 연결하고, 프로젝트 경계를 벗어난 요청을 검증하는 접근 제어를 구현했습니다.</dd></div>
+          <div><dt>검증</dt><dd>프로젝트 README에 실 MySQL을 사용하는 PR 검증과 API 교차 검증 절차를 정리했습니다.</dd></div>
+        </dl>
+        <a class="evidence" href="https://github.com/SEUIL/Threadia#팀-구성">역할과 구현 기록 보기 <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="case" id="together" aria-labelledby="together-title">
+        <header><h3 id="together-title">Together</h3><p>학생과 교수의 협업을 프로젝트 단위로 관리</p></header>
+        <dl>
+          <div><dt>역할</dt><dd>회원 인증과 팀 권한, 회의·투표·공지 API, 교수 피드백의 읽음 상태와 이력 기능을 담당했습니다.</dd></div>
+          <div><dt>구현</dt><dd>프로젝트와 멤버 관계를 모델링하고 Google Drive 문서 관리와 Agora 화상회의 토큰 발급을 연결했습니다.</dd></div>
+          <div><dt>검증</dt><dd>발표 후 실행 설정과 예외 응답을 정리하고 백엔드 테스트 및 프론트엔드 프로덕션 빌드를 확인했습니다.</dd></div>
+        </dl>
+        <a class="evidence" href="https://github.com/SEUIL/Together#담당-역할">역할과 검증 기록 보기 <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="case" id="timetodo" aria-labelledby="timetodo-title">
+        <header><h3 id="timetodo-title">TimeTodo</h3><p>기존 코드의 인증과 배포 준비 개선</p></header>
+        <dl>
+          <div><dt>문제</dt><dd>기존 앱은 클라이언트의 사용자 ID를 신뢰했고, 스키마 변경을 Hibernate 자동 갱신에 맡겼습니다.</dd></div>
+          <div><dt>구현</dt><dd>서버 세션과 Spring Security로 인증하고, 수정·삭제 요청에서 데이터 소유권을 검증하도록 바꿨습니다. 스키마 변경은 Flyway로 관리했습니다.</dd></div>
+          <div><dt>검증</dt><dd>프로젝트 기록 기준 백엔드 테스트 30건과 프론트엔드 빌드가 통과했고, 기존 DB와 빈 DB의 마이그레이션을 확인했습니다.</dd></div>
+        </dl>
+        <a class="evidence" href="https://github.com/SEUIL/Timetodo#개선-요약">개선 전후 비교 보기 <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="case" id="ttait" aria-labelledby="ttait-title">
+        <header><h3 id="ttait-title">Subscription-TTAIT</h3><p>공공주택 청약 공고 조회</p></header>
+        <dl>
+          <div><dt>구현</dt><dd>Spring Boot 백엔드에 공고 조회, 관심 공고 관리와 추천 API를 구성했습니다.</dd></div>
+          <div><dt>기술 기록</dt><dd>LH 공고 수집 과정에서 문서 파싱과 공고 중복 방지의 흐름을 문서화했습니다.</dd></div>
+        </dl>
+        <a class="evidence" href="https://github.com/SEUIL/Subscription-TTAIT/tree/main/subscrition">백엔드 코드 보기 <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="case" id="studylog" aria-labelledby="studylog-title">
+        <header><h3 id="studylog-title">StudyLog</h3><p>학습 기록을 위한 MVC2 웹 애플리케이션</p></header>
+        <dl>
+          <div><dt>구현</dt><dd>게시글·태그·시리즈 기능을 Java Servlet과 JSP로 구성하고, Oracle DAO에서 검색과 페이지네이션을 처리했습니다.</dd></div>
+          <div><dt>구조</dt><dd>로그인과 관리자 접근을 필터로 나눴고 데이터 접근에는 JDBC와 PreparedStatement를 사용했습니다.</dd></div>
+        </dl>
+        <a class="evidence" href="https://github.com/SEUIL/acorncampus_studyLog/tree/develop">문서와 코드 보기 <span aria-hidden="true">↗</span></a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <a class="brand" href="#top">SEUIL<span>.</span></a>
+    <a href="https://github.com/SEUIL">GitHub 프로필 <span aria-hidden="true">↗</span></a>
+    <a href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
