@@ -30,7 +30,7 @@
           <div class="window-bar"><i></i><i></i><i></i></div>
           <img src="./assets/timetodo-dashboard.png" alt="">
         </div>
-        <div class="device"><img src="./assets/fitmate-workout.png" alt=""></div>
+        <div class="device"><img src="./assets/fitmate/workout.png" alt=""></div>
       </div>
     </section>
 
@@ -41,8 +41,8 @@
       <div class="project-grid">
         <article class="card">
           <a href="#fitmate" class="media media-fitmate" tabindex="-1" aria-hidden="true">
-            <img src="./assets/fitmate-routine.png" alt="" loading="lazy">
-            <img src="./assets/fitmate-workout.png" alt="" loading="lazy">
+            <img src="./assets/fitmate/home.png" alt="" loading="lazy">
+            <img src="./assets/fitmate/workout.png" alt="" loading="lazy">
           </a>
           <div class="card-body">
             <h3>FitMate</h3>
@@ -88,8 +88,9 @@
 
       <div class="more-projects">
         <article class="compact-card">
-          <h3>Subscription-TTAIT</h3>
-          <p>공공주택 청약 공고를 모아 조회하고 관심 공고를 관리하는 프로젝트.</p>
+          <h3>청약 따잇</h3>
+          <p>LH 공고와 PDF를 수집·구조화하고, 내 조건에 맞는 공고와 신청 일정을 확인하는 웹 서비스.</p>
+          <ul class="tech" aria-label="기술 스택"><li>React</li><li>Spring Boot</li><li>Gemini API</li></ul>
           <div class="links"><a class="detail-link" href="#ttait">자세히 보기 <span aria-hidden="true">↓</span></a><a href="https://github.com/SEUIL/Subscription-TTAIT" aria-label="Subscription-TTAIT GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="compact-card">
@@ -112,6 +113,36 @@
           <div><dt>검증</dt><dd>Galaxy Fit3 실기기 연동을 시연했고, 마지막 모집 자리 동시 수락과 채팅 재전송은 백엔드 통합 테스트로 다뤘습니다.</dd></div>
         </dl>
         <a class="evidence" href="https://github.com/SEUIL/fitmate#구현에서-다룬-문제">구현 설명 보기 <span aria-hidden="true">↗</span></a>
+        <section class="screen-section" aria-labelledby="fitmate-screens-title">
+          <h4 id="fitmate-screens-title">실제 앱 화면</h4>
+          <p class="screen-intro">최종 발표 자료에 담긴 앱 화면입니다. 화면을 누르면 원본 크기로 볼 수 있습니다.</p>
+          <div class="screen-gallery">
+            <figure>
+              <a href="./assets/fitmate/home.png" aria-label="홈 화면 크게 보기"><img src="./assets/fitmate/home.png" alt="운동 시작과 운동 기록으로 이동하는 FitMate 홈" width="229" height="450" loading="lazy"></a>
+              <figcaption><strong>홈</strong>운동 시작과 기록 진입</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/fitmate/workout.png" aria-label="헬스 세트 기록 화면 크게 보기"><img src="./assets/fitmate/workout.png" alt="중량, 횟수와 RPE를 입력하는 헬스 세트 기록" width="220" height="478" loading="lazy"></a>
+              <figcaption><strong>헬스 세트 기록</strong>합성 계정·실서버 연결 시연</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/fitmate/running.png" aria-label="러닝 화면 크게 보기"><img src="./assets/fitmate/running.png" alt="러닝 시간, 거리와 페이스를 확인하는 화면" width="220" height="478" loading="lazy"></a>
+              <figcaption><strong>러닝</strong>예시 GPS 데이터로 시연</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/fitmate/inbody-review.png" aria-label="인바디 결과 검수 화면 크게 보기"><img src="./assets/fitmate/inbody-review.png" alt="인바디 판독 결과의 수치를 확인하는 검수 화면" width="228" height="498" loading="lazy"></a>
+              <figcaption><strong>인바디 결과 검수</strong>MOCK 판독 결과로 시연</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/fitmate/mate.png" aria-label="메이트 모집 상세 화면 크게 보기"><img src="./assets/fitmate/mate.png" alt="메이트 모임 조건과 참가 상태를 확인하는 화면" width="218" height="457" loading="lazy"></a>
+              <figcaption><strong>메이트 모집 상세</strong>합성 계정·실서버 연결 시연</figcaption>
+            </figure>
+            <figure>
+              <a href="./assets/fitmate/community.png" aria-label="커뮤니티 화면 크게 보기"><img src="./assets/fitmate/community.png" alt="FitMate 커뮤니티 게시글 목록" width="218" height="476" loading="lazy"></a>
+              <figcaption><strong>커뮤니티</strong>합성 UI 데이터로 시연</figcaption>
+            </figure>
+          </div>
+        </section>
       </article>
 
       <article class="case" id="threadia" aria-labelledby="threadia-title">
@@ -145,12 +176,14 @@
       </article>
 
       <article class="case" id="ttait" aria-labelledby="ttait-title">
-        <header><h3 id="ttait-title">Subscription-TTAIT</h3><p>공공주택 청약 공고 조회</p></header>
+        <header><h3 id="ttait-title">청약 따잇</h3><p>Subscription-TTAIT · 공고 탐색부터 조건 확인과 신청 일정까지</p></header>
         <dl>
-          <div><dt>구현</dt><dd>Spring Boot 백엔드에 공고 조회, 관심 공고 관리와 추천 API를 구성했습니다.</dd></div>
-          <div><dt>기술 기록</dt><dd>LH 공고 수집 과정에서 문서 파싱과 공고 중복 방지의 흐름을 문서화했습니다.</dd></div>
+          <div><dt>서비스</dt><dd>지역·주택 유형·가격으로 공고를 검색하고, 프로필 기반 추천과 조건 체크리스트를 제공합니다. 주변 시세 비교, 즐겨찾기 일정과 이메일 알림도 연결했습니다.</dd></div>
+          <div><dt>수집·검수</dt><dd>관리자가 선택한 LH 후보의 PDF를 Gemini로 파싱합니다. 공고 정보와 PDF URL의 fingerprint가 같으면 재파싱을 생략해 기존 결과를 유지합니다.</dd></div>
+          <div><dt>조회 개선</dt><dd>공고 전체를 메모리에 읽던 방식에서 DB 검색·정렬·페이지네이션으로 전환했습니다. 개인화 조건 판정은 evaluator로 분리하고 응답에 private, no-store를 적용합니다.</dd></div>
+          <div><dt>검증</dt><dd>저장소에 조건 체크리스트와 즐겨찾기 일정의 MySQL E2E 검증 기록을 남겼습니다.</dd></div>
         </dl>
-        <a class="evidence" href="https://github.com/SEUIL/Subscription-TTAIT/tree/main/subscrition">백엔드 코드 보기 <span aria-hidden="true">↗</span></a>
+        <a class="evidence" href="https://github.com/SEUIL/Subscription-TTAIT#readme">서비스 소개와 구현 기록 보기 <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="case" id="studylog" aria-labelledby="studylog-title">

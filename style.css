@@ -88,6 +88,15 @@ nav a, .site-footer > a:not(.brand) { text-decoration: none; font-size: .9rem; f
 .case dt { color: var(--ink); font-weight: 760; font-size: .89rem; }
 .case dd { color: var(--muted); font-size: .91rem; }
 .case .evidence { grid-column: 2; justify-self: start; margin-top: .7rem; }
+.screen-section { grid-column: 1 / -1; margin-top: 28px; }
+.screen-section h4 { margin: 0; font-size: 1.08rem; }
+.screen-intro { color: var(--muted); font-size: .87rem; margin-top: 5px; }
+.screen-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px 18px; margin-top: 20px; }
+.screen-gallery figure { min-width: 0; text-align: center; }
+.screen-gallery a { display: flex; align-items: flex-start; justify-content: center; height: 330px; padding: 10px; background: #e8efec; border-radius: 12px; }
+.screen-gallery img { width: auto; height: auto; max-height: 100%; object-fit: contain; border-radius: 5px; box-shadow: 0 2px 9px #15382a20; }
+.screen-gallery figcaption { margin-top: 10px; color: var(--muted); font-size: .79rem; }
+.screen-gallery strong { display: block; color: var(--ink); font-size: .9rem; }
 .site-footer { border-top: 1px solid var(--line); min-height: 78px; }
 .site-footer .brand { margin-right: auto; }
 
@@ -115,6 +124,9 @@ nav a, .site-footer > a:not(.brand) { text-decoration: none; font-size: .9rem; f
   .case { gap: .85rem; }
   .case .evidence { grid-column: 1; margin-top: 0; }
   .case dl > div { grid-template-columns: 4em 1fr; }
+  .screen-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 10px; }
+  .screen-gallery a { height: auto; aspect-ratio: 1 / 2.25; padding: 6px; }
+  .screen-gallery img { max-height: 100%; max-width: 100%; }
   .site-footer { gap: .7rem; }
   .site-footer > a:not(.brand) { font-size: .77rem; }
 }
