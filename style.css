@@ -97,6 +97,9 @@ nav a, .site-footer > a:not(.brand) { text-decoration: none; font-size: .9rem; f
 .screen-gallery img { width: auto; height: auto; max-height: 100%; object-fit: contain; border-radius: 5px; box-shadow: 0 2px 9px #15382a20; }
 .screen-gallery figcaption { margin-top: 10px; color: var(--muted); font-size: .79rem; }
 .screen-gallery strong { display: block; color: var(--ink); font-size: .9rem; }
+.screen-gallery-web { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.screen-gallery-web a { height: auto; aspect-ratio: 16 / 10; }
+.screen-gallery-web img { width: 100%; height: 100%; box-shadow: none; }
 .site-footer { border-top: 1px solid var(--line); min-height: 78px; }
 .site-footer .brand { margin-right: auto; }
 
@@ -127,6 +130,8 @@ nav a, .site-footer > a:not(.brand) { text-decoration: none; font-size: .9rem; f
   .screen-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 10px; }
   .screen-gallery a { height: auto; aspect-ratio: 1 / 2.25; padding: 6px; }
   .screen-gallery img { max-height: 100%; max-width: 100%; }
+  .screen-gallery-web { grid-template-columns: 1fr; }
+  .screen-gallery-web a { aspect-ratio: 16 / 10; }
   .site-footer { gap: .7rem; }
   .site-footer > a:not(.brand) { font-size: .77rem; }
 }
